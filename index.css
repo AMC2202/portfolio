@@ -6,6 +6,12 @@
   margin: 15px;
 }
 
+@media only screen and (max-width: 600px) {
+  .slideshow-container {
+    max-width: 350px;
+  }
+}
+
 /*Per nascondere le immagini di default*/
 .mySlides {
   display: none;
@@ -18,7 +24,7 @@
 
 @media only screen and (max-width: 600px) {
   .scrollImages {
-    width:200px;
+    width:350px;
     height:380px;
   }
 }
@@ -47,7 +53,13 @@
 
 @media only screen and (max-width: 600px) {
   .next {
-    right: 22px;
+    right: -15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .prev {
+    right: 293px;
   }
 }
 
@@ -119,7 +131,7 @@
 
 @media only screen and (max-width: 600px) {
   .mySlides .content{
-    width: 200px;
+    width: 350px;
     padding: 15px; 
     margin-bottom: 19px;
   }
@@ -127,7 +139,7 @@
 
 @media only screen and (max-width: 600px) {
   .fade{
-    width: 200px;
+    width: 350px;
     padding: 15px; 
     margin-bottom: 19px;
   }
