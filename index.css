@@ -18,7 +18,7 @@
 
 @media only screen and (max-width: 600px) {
   .scrollImages {
-    width:380px;
+    width:350px;
     height:380px;
   }
 }
@@ -119,15 +119,17 @@
 
 @media only screen and (max-width: 600px) {
   .mySlides .content{
-    width: 380px;
+    width: 350px;
     padding: 15px; 
+    margin-bottom: 19px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .fade{
-    width: 380px;
+    width: 350px;
     padding: 15px; 
+    margin-bottom: 19px;
   }
 }
 
