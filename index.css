@@ -69,6 +69,7 @@
 @media screen and (max-width: 600px) {
   .nav {
     font-size: 22px;
+    padding-top: 20px;
   }
 }
 
@@ -118,6 +119,13 @@
 
 @media only screen and (max-width: 600px) {
   .mySlides .content{
+    width: 380px;
+    padding: 15px; 
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .fade{
     width: 380px;
     padding: 15px; 
   }
