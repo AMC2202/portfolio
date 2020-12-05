@@ -55,6 +55,7 @@
   .next {
     right: -15px;
     margin-top: -100px;
+    top: 35%;
   }
 }
 
@@ -62,6 +63,7 @@
   .prev {
     right: 293px;
     margin-top: -100px;
+    top: 25%;
   }
 }
 
