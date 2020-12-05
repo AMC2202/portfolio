@@ -318,10 +318,18 @@ button:hover, a:hover {
   background-color: #333333; /*linear-gradient(#404040, #595959);*/
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
+  padding-bottom: 30px;
   border: 1px solid #888;
   border-radius: 8px;
   text-align: right
   /*width: 80%; /* Could be more or less, depending on screen size */
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-content {
+    padding: 10px;
+    padding-bottom: 20px;
+  }
 }
 
 .close {
@@ -345,6 +353,13 @@ button:hover, a:hover {
   height: 200px;
   /*border: 1px solid #f1f1f1;*/
   /* perspective: 1000px; Remove this if you don't want the 3D effect */
+}
+
+@media only screen and (max-width: 600px) {
+  .flip-box {
+    width: 300px;
+    height: 150px;
+  }
 }
 
 /*biglietto da visita - posizionare il lato anteriore e posteriore*/
