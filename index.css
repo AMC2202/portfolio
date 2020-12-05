@@ -157,7 +157,7 @@
 
 @media only screen and (max-width: 600px) {
   .parx {
-    font-size:25px;
+    font-size:18px;
     margin:10px;
   }
 }
@@ -169,7 +169,7 @@
 
 @media only screen and (max-width: 600px) {
   .pary {
-    font-size:20px;
+    font-size:16px;
     margin:10px;
   }
 }
@@ -480,7 +480,7 @@ button:hover, a:hover {
 
 @media screen and (max-width: 600px) {
   .header {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 
