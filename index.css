@@ -11,6 +11,18 @@
   display: none;
 }
 
+.scrollImages {
+  width:1300px;
+  height:575px;
+}
+
+@media only screen and (max-width: 600px) {
+  .scrollImages {
+    width:430px;
+    height:380px;
+  }
+}
+
 /* Next/prev buttons*/
 .prev, .next {
   cursor: pointer;
@@ -33,6 +45,12 @@
   border-radius: 3px 0 0 3px;
 }
 
+@media only screen and (max-width: 600px) {
+  .next {
+    right: 22px;
+  }
+}
+
 /*Opacità al passaggio del mouse*/
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
@@ -46,6 +64,12 @@
   padding: 8px 12px;
   position: absolute;
   top: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    font-size: 22px;
+  }
 }
 
 .dot {
@@ -90,6 +114,38 @@
   font-family: Georgia, serif;
   width: 130%; 
   padding: 20px; 
+}
+
+@media only screen and (max-width: 600px) {
+  .mySlides .content{
+    width: 430px;
+    padding: 15px; 
+  }
+}
+
+
+.parx {
+  font-size:40px; 
+  margin:20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .parx {
+    font-size:25px;
+    margin:10px;
+  }
+}
+
+.pary {
+  font-size:30px; 
+  margin:20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .pary {
+    font-size:20px;
+    margin:10px;
+  }
 }
 
 /* Overlay (background) */
@@ -161,6 +217,13 @@ body {
   background-color: #bfbfbf;
   margin: auto;
   text-align: center;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    margin-top: 450px;
+  }
 }
 
 
@@ -295,11 +358,40 @@ button:hover, a:hover {
 }
 
 /* Per posizionare l'overlay */
-.container {
+.containerx {
   position: relative;
   margin: 45px;
   width: 50%;
   max-width: 380px;
+  float: left;
+}
+
+.containery {
+  position: relative;
+  margin: 45px;
+  width: 50%;
+  max-width: 380px;
+  float: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .containerx {
+    position: relative;
+    margin: 20px;
+    width: 330px;
+    max-width: 350px;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .containery {
+    position: relative;
+    margin: 20px;
+    width: 330px;
+    max-width: 350px;
+    float: left;
+  }
 }
 
 /* responsive */
@@ -327,7 +419,11 @@ button:hover, a:hover {
   font-family: Georgia,serif;
 }
 
-.container:hover .over-lay {
+.containerx:hover .over-lay {
+  opacity: 1;
+}
+
+.containery:hover .over-lay {
   opacity: 1;
 }
 
@@ -339,6 +435,12 @@ button:hover, a:hover {
   color: white;
   font-size: 20px;
   font-family: Georgia,serif;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    font-size: 12px;
+  }
 }
 
 .footer {
