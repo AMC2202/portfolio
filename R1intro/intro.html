@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MyProject</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="intro.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <!-- Load color scale -->
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<div class="sticky">
+<div class="tabcontent">
+  <div style="float:left"><a href="/Users/Caffeina/portfolio/index.html" class="icon"><i class="fa fa-home"></i></a></div>
+  <!--<div style="float:right"><a href="mailto:angelica.cannistra@gmail.com" class="icon"><i class="fa fa-envelope"></i></a></div>-->
+  <h3 style="font-family: georgia,serif;font-weight:normal">Sintesi della situazione corrente</h3>
+
+</div>
+<a href="/Users/Caffeina/portfolio/R1pre/pre.html"><button class="tablinkP">Premessa</button></a>
+<a href="/Users/Caffeina/portfolio/R1intro/intro.html"><button class="tablinkI">Introduzione</button></a>
+<a href="/Users/Caffeina/portfolio/R1cap1/cap1.html"><button class="tablinkC1">Capitolo 1</button></a>
+<a href="/Users/Caffeina/portfolio/R1cap2/cap2.html"><button class="tablinkC2">Capitolo 2</button></a>
+<a href="/Users/Caffeina/portfolio/R1cap3/cap3.html"><button class="tablinkC3">Capitolo 3</button></a>
+</div>
+<div style="margin: 100px">
+<h2 class="tit" style="margin-bottom: 0px;">Introduzione</h2>
+<h5 class="par" style="text-align:center; font-style:italic; margin-top: 0px;">o motivo di intervento</h5>
+<p class="par">Nel biennio 2019-2020 sono state registrate un totale di 100.957 segnalazioni,
+  provenienti da 12 stabilimenti (G1), dislocati in 96 dipartimenti, con una media mensile di
+  45 richieste di supporto, in un range di valori che va da 29 a 70 segnalazioni (G2) per ogni
+  dipartimento.</p>
+<div style="float:left; padding-right: 90px" id="G1"></div>
+<div id="G2"></div>
+<p class="par">In accordo coi dati forniti da uno studio di incremento lineare (nome_documento), si è stimato
+  che il carico aggiuntivo di criticità apportato dall'apertura di 3 nuovi stabilimenti dislocati in 24
+  dipartimenti, in assenza di ulteriori variabili prevedibili, sarebbe stato pari ad un incremento del 25%
+  delle segnalazioni attualmente registrate.</p>
+<p class="par">A fronte di una media mensile di 45 segnalazioni per dipartimento, gestite con agilità
+  dal team di supporto tecnico, si osservano picchi di criticità attesi che superano il 55% del valore mediano
+  calcolato su base mensile, in prossimità delle ultime settimane di lavorazione e collaudo (G3). 
+  Nonostante questo, i tempi di risoluzione forniti sforano di appena qualche giorno i livelli di servizio 
+  concordati (SLA), dimostrando l'affidabilità del team di supporto e giustificando la scelta di un aumento 
+  di personale tecnico tale da fronteggiare l'incremento di segnalazioni previsto dallo studio (nome_documento) 
+  del (data) in riferimento al trimestre appena concluso (gennaio-marzo 2021).</p>
+<div id="G3"></div>
+<!--<div id="G4"></div>-->
+<p class="par">Alla luce dei dati registrati negli ultimi tre mesi è evidente, tuttavia, che le precedenti stime
+  non tenevano in considerazione alcune variabili fondamentali, come dimostrato dalla presente analisi.</p>
+</div>
+<script src="G1.js"></script>
+<script src="G2.js"></script>
+<script src="G3.js"></script>
+<!--<script src="G4.js"></script>-->
+</body>
+</html>

@@ -1,0 +1,42 @@
+body,html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    background-image: url("background.jpg");
+    /*filter: blur(2px);
+    -webkit-filter: blur(2px);*/
+    height: 100%; 
+    /*Per posizionare l'immagine*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .bg-text {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4); /*opacità*/
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+
+.icon {
+    padding-right: 20px;
+    color: #f1f1f1;
+    font-size: 30px;
+}

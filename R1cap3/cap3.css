@@ -1,0 +1,136 @@
+/* tab buttons */
+.tablinkP {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 20%;
+  font-family:Georgia,serif;
+}
+
+.tablinkI {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 20%;
+  font-family:Georgia,serif;
+}
+
+.tablinkC1 {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 20%;
+  font-family:Georgia,serif;
+}
+
+.tablinkC2 {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 20%;
+  font-family:Georgia,serif;
+
+}
+
+.tablinkC3 {
+  background-color: #80aaff;;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 20%;
+  font-family:Georgia,serif;
+}
+
+/* Colore al passaggio del mouse */
+.tablinkC1:hover {
+  background-color: #777;
+}
+
+.tablinkC2:hover {
+  background-color: #777;
+}
+
+.tablinkC3:hover {
+  background-color: #777;
+}
+
+/* default tab content */
+.tabcontent {
+  background-color: #80aaff;
+  color: white;
+  display: block;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Stile individuale tab
+#Intro {background-color:#80aaff;}
+#Cap1 {background-color:#6699ff;}
+#Cap2 {background-color:#4d88ff;}
+#Cap3 {background-color:#3377ff;}*/
+
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.icon {
+  font-size:30px;
+  cursor:pointer;
+  text-decoration:none;
+  color: white;
+  margin: 0;
+}
+
+body {
+  background-image: url("background3.jpg");
+  /*background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;*/
+}
+
+.par {
+  text-align:justify;
+  font-size:18px;
+  font-weight:normal;
+  font-family:Georgia,serif;
+}
+
+.tit {
+  text-align:center;
+  font-size:45px;
+  font-weight:bold;
+  font-family:Georgia,serif;
+}
+
+.subtit {
+  text-align:center;
+  font-size:25px;
+  font-weight:bold;
+  font-family:Georgia,serif;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MyProject</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="header">
+    <h2 style="font-weight:normal">Strumenti di reportistica aziendale</h2>
+    <p>My header</p>
+  </div>
+  <!-- Sovrapposizione indice R1-->
+  <div id="myNavR1" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNavR1()">&times;</a>
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="/Users/Caffeina/portfolio/R1pre/pre.html">Premessa</a>
+      <a href="/Users/Caffeina/portfolio/R1intro/intro.html">Introduzione</a>
+      <a href="/Users/Caffeina/portfolio/R1cap1/cap1.html">Capitolo 1</a>
+      <a href="/Users/Caffeina/portfolio/R1cap2/cap2.html">Capitolo 2</a>
+      <a href="/Users/Caffeina/portfolio/R1cap3/cap3.html">Capitolo 3</a>
+    </div>
+  </div>
+  <!-- Sovrapposizione indice R2 -->
+  <div id="myNavR2" class="overlay">
+    <!-- tasto chiusura navigazione. Si potrebbe usare una sola volta, ma preferisco separare nettamente gli indici -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNavR2()">&times;</a>
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <!--<a href="/Users/Caffeina/portfolio/R2pre/R2pre.html">Premessa</a>
+      <a href="/Users/Caffeina/portfolio/R2intro/R2intro.html">Introduzione</a>
+      <a href="/Users/Caffeina/portfolio/R2cap1/R2cap1.html">Capitolo 1</a>
+      <a href="/Users/Caffeina/portfolio/R2cap2/R2cap2.html">Capitolo 2</a>
+      <a href="/Users/Caffeina/portfolio/R2cap2/R2cap2.html">Capitolo 3</a>-->
+      <a href="/Users/Caffeina/portfolio/wip.html">Premessa</a>
+      <a href="/Users/Caffeina/portfolio/wip.html">Introduzione</a>
+      <a href="/Users/Caffeina/portfolio/wip.html">Capitolo 1</a>
+      <a href="/Users/Caffeina/portfolio/wip.html">Capitolo 2</a>
+      <a href="/Users/Caffeina/portfolio/wip.html">Capitolo 3</a>
+    </div>
+  </div>
+  <!-- Sovrapposizione indice R3-->
+  <div id="myNavR3" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNavR3()">&times;</a>
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="/Users/Caffeina/portfolio/wip.html">Premessa</a> 
+      <a href="/Users/Caffeina/portfolio/wip.html">Introduzione</a>
+      <a href="/Users/Caffeina/portfolio/wip.html">Capitolo 1</a>
+      <a href="/Users/Caffeina/portfolio/wip.html">Capitolo 2</a>
+      <a href="/Users/Caffeina/portfolio/wip.html">Capitolo 3</a>
+      <!--<a href="/Users/Caffeina/portfolio/R3pre/R3pre.html"></a>Premessa</a> 
+      <a href="/Users/Caffeina/portfolio/R3intro/R3intro.html">Introduzione</a>
+      <a href="/Users/Caffeina/portfolio/R3cap1/R3cap1.html">Capitolo 1</a>
+      <a href="/Users/Caffeina/portfolio/R3cap2/R3cap2.html">Capitolo 2</a>
+      <a href="/Users/Caffeina/portfolio/R3cap3/R3cap3.html">Capitolo 3</a>-->
+    </div>
+  </div>
+  <!--<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>-->
+
+  <script>
+  function openNavR1() {
+    document.getElementById("myNavR1").style.width = "100%";
+  }
+
+  function closeNavR1() {
+    document.getElementById("myNavR1").style.width = "0%";
+  }
+
+  function openNavR2() {
+    document.getElementById("myNavR2").style.width = "100%";
+  }
+
+  function closeNavR2() {
+    document.getElementById("myNavR2").style.width = "0%";
+  }
+
+  function openNavR3() {
+    document.getElementById("myNavR3").style.width = "100%";
+  }
+
+  function closeNavR3() {
+    document.getElementById("myNavR3").style.width = "0%";
+  }
+
+  </script>
+
+<div class="slideshow-container">
+  <!-- Slide con didascalia -->
+  <div class="mySlides fade">
+    <span class="nav" onclick="openNavR1()">&#9776; indice</span>
+      <img src="img/Rep1.jpg" alt="people" style="width:1300px;height:575px;">
+      <div class="content">
+        <p style="font-size:40px; margin:20px">Report di esempio</p>
+        <p style="font-size:30px; margin:20px">Ottimizzare i tempi di risoluzione a partire dalla distribuzione delle richieste di supporto</p>
+      </div>
+  </div>
+
+  <div class="mySlides fade">
+    <span class="nav" onclick="openNavR2()">&#9776; indice</span>
+    <img src="img/Rep3.jpg" alt="ideas" style="width:1300px;height:575px;">
+    <div class="content">
+      <p style="font-size:40px; margin:20px">Altro Report di esempio</p>
+      <p style="font-size:30px; margin:20px">Lavori in corso</p>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <span class="nav" onclick="openNavR3()">&#9776; indice</span>
+    <img src="img/Rep6.png" alt="projects" style="width:1300px;height:575px;">
+    <div class="content">
+      <p style="font-size:40px; margin:20px">Ancora un report di esempio</p>
+      <p style="font-size:30px; margin:20px">Lavori in corso</p>
+    </div>
+  </div>
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<!-- punti di scorrimento -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<div style="float:left;"class="container">
+  <a href="/Users/Caffeina/portfolio/aboutme/myprofile.html">
+  <img src="img/ideas.jpg" alt="AboutMe" class="image">
+  <div class="over-lay">A.proposito.di.me</div></a>
+</div>
+<div style="float:right;"class="container">
+  <!--<a href="">-->
+  <img src="img/ideas.jpg" alt="Relax" class="image"> <!--</a>-->
+  <div class="over-lay">[lavori, in, corso]</div>
+</div>
+<div style="margin-top:40px;" class="card"> <!---->
+  <img src="img/06blur.jpg" alt="AMC" style="width:100%">
+  <h2 class="tit">Angelica Micali Cannistra</h2>
+  <p class="subtit">Junior Developer</p>
+  <!--<a href=""><i class="fa fa-telegram"></i></a>-->
+  <a href="skype:angelica.micali?chat"><i class="fa fa-skype"></i></a>
+  <a href="https://it.linkedin.com/in/angelica-micali-cannistra-junior-java-developer" target="_blank"><i class="fa fa-linkedin"></i></a>
+  <!--<a href="#"><i class="fa fa-google"></i></a>-->
+  <p><button id="myBtn">Contattami()</button></p>
+</div>
+<!-- Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+        <div class="flip-box-front"><h2>biglietto da visita</h2></div>
+        <div class="flip-box-back"><h2>lavori in corso</h2></div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+<footer class="footer"><p>My footer</p></footer>
+</html>

@@ -1,0 +1,353 @@
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 15px;
+}
+
+/*Per nascondere le immagini di default*/
+.mySlides {
+  display: none;
+}
+
+/* Next/prev buttons*/
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Posizionare next */
+.next {
+  right: -300px;
+  border-radius: 3px 0 0 3px;
+}
+
+/*Opacità al passaggio del mouse*/
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.nav {
+  color: #f2f2f2;
+  cursor:pointer;
+  font-size: 30px;
+  font-family: Georgia, serif;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Dissolvenza */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.mySlides .content {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5); /* opacità */
+  color: #f1f1f1; 
+  font-family: Georgia, serif;
+  width: 130%; 
+  padding: 20px; 
+}
+
+/* Overlay (background) */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.9); /* opacità */
+  overflow-x: hidden; /* Per disabilitare lo scroll */
+  transition: 0.5s; /* transizione slide */
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  font-family: Georgia, serif;
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* link nell'overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* Colore al passaggio del mouse */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/*Altezza dello schermo inferiore a 450 pixel, cambia la dimensione*/
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+body {
+  background: linear-gradient(#ccddff, #80aaff);
+  margin: 1px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 230px;
+  /*max-height: 300px;*/
+  /*position: fixed;*/
+  padding-top: 20px;
+  background-color: #bfbfbf;
+  margin: auto;
+  text-align: center;
+}
+
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-weight: normal;
+  font-family:Georgia,serif;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.par {
+  text-align:justify;
+  font-size:14px;
+  font-weight:lighter;
+  font-family:Georgia,serif;
+}
+
+.tit {
+  text-align:center;
+  font-size:22px;
+  font-weight:normal;
+  font-family:Georgia,serif;
+}
+
+.subtit {
+  text-align:center;
+  font-size:16px;
+  font-weight:lighter;
+  font-family:Georgia,serif;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  height: max-content;
+  width: max-content;
+  background-color: #333333; /*linear-gradient(#404040, #595959);*/
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 8px;
+  text-align: right
+  /*width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  /*float: right;*/
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.flip-box {
+  background-color: transparent;
+  width: 400px;
+  height: 200px;
+  /*border: 1px solid #f1f1f1;*/
+  /* perspective: 1000px; Remove this if you don't want the 3D effect */
+}
+
+/*biglietto da visita - posizionare il lato anteriore e posteriore*/
+.flip-box-inner {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+}
+
+/* Capovolgimento al passaggio del mouse */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+  transition: 2s ease;
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bfbfbf;
+  color:black;
+}
+
+.flip-box-back {
+  background-color: #bfbfbf;
+  color:black;
+  transform: rotateY(180deg);
+}
+
+/* Per posizionare l'overlay */
+.container {
+  position: relative;
+  margin: 45px;
+  width: 50%;
+  max-width: 380px;
+}
+
+/* responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* overlay effect */
+.over-lay {
+  position: absolute;
+  padding: 30px;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  font-family: Georgia,serif;
+}
+
+.container:hover .over-lay {
+  opacity: 1;
+}
+
+.header {
+  margin-top: 20px;
+  padding: 1px;
+  text-align: center;
+  background: #333333;/*#777;*/
+  color: white;
+  font-size: 20px;
+  font-family: Georgia,serif;
+}
+
+.footer {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding: 1px;
+  text-align: center;
+  background: #333333; /*#777;*/
+  color: white;
+  font-size: 13px;
+  font-family: Georgia,serif;
+}
