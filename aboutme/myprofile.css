@@ -101,6 +101,30 @@ body {
   font-family: Georgia, serif;
 }
 
+@media only screen and (max-width: 600px) {
+  .content {
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .resizeh2 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .resizeh4 {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .resizep {
+    font-size: 13px;
+  }
+}
+
 /* Media queries - Responsive timeline su schermi di larghezza inferiore a 600px */
 @media screen and (max-width: 600px) {
 /* Place the timelime to the left */
@@ -119,7 +143,7 @@ body {
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent #d9d9d9 transparent transparent;
   }
 
 /*Per posizionare i cerchi*/
@@ -189,13 +213,13 @@ body {
 }
 
 /*Posizionare i segnalibri*/
-#exp {
+#experience {
   top: 20px;
   background-color:#474e5d;
   font-family: Georgia, serif;
 }
 
-#train {
+#training {
   top: 80px;
   background-color:#474e5d;
   font-family: Georgia, serif;
@@ -221,6 +245,10 @@ body {
   margin: 0;
 }
 
+.headtit {
+  margin-bottom: 5px;
+}
+
 .marpar {
   margin: 0px;
 }
@@ -231,10 +259,6 @@ body {
     text-align: left;
     margin-left: 60px;
   }
-}
-
-.headtit {
-  margin-bottom: 5px;
 }
 
 .marbot {
@@ -275,6 +299,40 @@ body {
   }
 }
 
+
+.tmarpar {
+  margin: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .tmarpar {
+    font-size: 13px;
+    text-align: left;
+  }
+}
+
+.tmarbot {
+  margin-bottom:0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .tmarbot {
+    font-size: 13px;
+    text-align: left;
+  }
+}
+
+.tmartop {
+  margin-top:0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .tmartop {
+    font-size: 13px;
+    text-align: left;
+  }
+}
+
 .textarea {
   margin-bottom: 20px;
   margin-top: 30px;
@@ -295,4 +353,31 @@ body {
   font-family: serif;
   font-size: 14px;
   font-weight: lighter;
+}
+
+.bookmark1 {
+  color:white;
+  font-family:Georgia,serif;
+  font-style:italic;
+}
+
+@media only screen and (max-width: 600px) {
+  .bookmark1 {
+    text-align: right;
+    font-size: 22px;
+  }
+}
+
+.bookmark2 {
+  color:white;
+  font-family:Georgia,serif;
+  font-style:italic;
+  text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .bookmark2 {
+    text-align: right;
+    font-size: 22px;
+  }
 }
