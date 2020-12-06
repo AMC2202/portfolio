@@ -12,6 +12,12 @@
   font-family: Georgia, serif;
 }
 
+@media only screen and (max-width: 600px) {
+  .tablinkP {
+    font-size: 13px;
+  }
+}
+
 .tablinkI {
   background-color:#555;
   color: white;
@@ -23,6 +29,12 @@
   font-size: 17px;
   width: 20%;
   font-family: Georgia, serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .tablinkI {
+    font-size: 13px;
+  }
 }
 
 .tablinkC1 {
@@ -38,6 +50,12 @@
   font-family: Georgia, serif;
 }
 
+@media only screen and (max-width: 600px) {
+  .tablinkC1 {
+    font-size: 13px;
+  }
+}
+
 .tablinkC2 {
   background-color: #555;
   color: white;
@@ -51,6 +69,12 @@
   font-family: Georgia, serif;
 }
 
+@media only screen and (max-width: 600px) {
+  .tablinkC2 {
+    font-size: 13px;
+  }
+}
+
 .tablinkC3 {
   background-color: #555;
   color: white;
@@ -62,6 +86,12 @@
   font-size: 17px;
   width: 20%;
   font-family: Georgia, serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .tablinkC3 {
+    font-size: 13px;
+  }
 }
 
 /* Colore al passaggio del mouse */
@@ -87,6 +117,15 @@
   display: block;
   padding: 30px;
   text-align: center;
+  font-family: georgia, serif;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .tabcontent {
+    padding: 15px;
+    font-size: 16px;
+  }
 }
 
 /* Stile individuale per i tab content 
@@ -116,6 +155,16 @@ body {
   background-size: 100% 100%;*/
 }
 
+.page {
+  margin: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .page {
+    margin: 30px;
+  }
+}
+
 .par {
   text-align:justify;
   font-size:18px;
@@ -123,11 +172,24 @@ body {
   font-family:Georgia,serif;
 }
 
+@media only screen and (max-width: 600px) {
+  .par {
+    font-size:14px;
+  }
+}
+
 .tit {
   text-align:center;
   font-size:45px;
   font-weight:bold;
   font-family:Georgia,serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .tit {
+    font-size:25px;
+    padding-top: 40px;
+  }
 }
 
 .subtit {
