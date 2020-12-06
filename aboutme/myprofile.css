@@ -5,6 +5,14 @@
 body {
   background-color: #474e5d;
   font-family: Helvetica, sans-serif;
+  background-image: url('myprofiletest.jpg');
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-image: url('mptest.jpg')
+  }
 }
 
 .timeline {
@@ -128,37 +136,56 @@ body {
   position: relative;
   text-align: center;
   color: black;
+  font-family: Georgia, serif;
+  height: 540px;
 }
 
-.centered {
+@media only screen and (max-width: 600px) {
+  .resize {
+    font-size: 22px;
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 70px;
+  }
+}
+
+/*.centered {
   position: absolute;
   width: max-content;
-  top: 50%;
-  left: 50%;
+  top: 10%;
+  left: 30%;
   transform: translate(-50%, -80%);
   font-family: Georgia, serif;
-}
+}*/
 
 .top-right {
-  position: absolute;
-  top: 8px;
-  right: 16px;
+  float: right;
+  padding-right: 20px;
 }
 
-#mySidenav a {
+.mySidenav a {
   position: absolute; 
-  left: -90px; /* per posizionare i segnalibri fuori dallo schermo */
+  left: -122px; /* per posizionare i segnalibri fuori dallo schermo */
   transition: 0.3s; /* per gestire la transizione al passaggio del mouse */
   padding: 15px; 
-  width: 150px; 
+  width: 200px; 
   text-decoration: none; 
   font-size: 20px; 
   color: white; 
   border-radius: 0 5px 5px 0; 
 }
 
-#mySidenav a:hover {
+.mySidenav a:hover {
   left: 0; /*Transizione al passaggio del mouse*/
+}
+
+@media only screen and (max-width: 600px) {
+  .mySidenav a {
+    font-size: 0%;
+    padding: 20px; 
+    left: 0;
+    width: 50px;
+  }
 }
 
 /*Posizionare i segnalibri*/
@@ -198,6 +225,14 @@ body {
   margin: 0px;
 }
 
+@media only screen and (max-width: 600px) {
+  .marpar {
+    font-size: 13px;
+    text-align: left;
+    margin-left: 60px;
+  }
+}
+
 .headtit {
   margin-bottom: 5px;
 }
@@ -206,8 +241,38 @@ body {
   margin-bottom:0px;
 }
 
+@media only screen and (max-width: 600px) {
+  .marbot {
+    font-size: 13px;
+    text-align: left;
+    margin-left: 60px;
+  }
+}
+
 .martop {
   margin-top:0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .martop {
+    font-size: 13px;
+    text-align: left;
+    margin-left: 60px;
+    
+  }
+}
+
+.lastrow {
+  font-size:large;
+}
+
+@media only screen and (max-width: 600px) {
+  .lastrow {
+    font-size: 14px;
+    text-align: left;
+    margin-left: 60px;
+    
+  }
 }
 
 .textarea {
