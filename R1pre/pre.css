@@ -161,11 +161,17 @@ body {
   }
 }
 
+@media only screen and (max-width: 700px) {
+  html {
+    width: 690px;
+  }
+}
+
 .page {
   margin: 100px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .page {
     margin: 30px;
   }
