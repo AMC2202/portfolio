@@ -12,6 +12,12 @@
   font-family:Georgia,serif;
 }
 
+@media only screen and (max-width: 600px) {
+  .tablinkP {
+    font-size: 13px;
+  }
+}
+
 .tablinkI {
   background-color: #555;
   color: white;
@@ -23,6 +29,12 @@
   font-size: 17px;
   width: 20%;
   font-family:Georgia,serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .tablinkI {
+    font-size: 13px;
+  }
 }
 
 .tablinkC1 {
@@ -38,6 +50,12 @@
   font-family:Georgia,serif;
 }
 
+@media only screen and (max-width: 600px) {
+  .tablinkC1 {
+    font-size: 13px;
+  }
+}
+
 .tablinkC2 {
   background-color: #80aaff;
   color: white;
@@ -51,6 +69,12 @@
   font-family:Georgia,serif;
 }
 
+@media only screen and (max-width: 600px) {
+  .tablinkC2 {
+    font-size: 13px;
+  }
+}
+
 .tablinkC3 {
   background-color: #555;
   color: white;
@@ -62,6 +86,12 @@
   font-size: 17px;
   width: 20%;
   font-family:Georgia,serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .tablinkC3 {
+    font-size: 13px;
+  }
 }
 
 /* Colore al passaggio del mouse */
@@ -88,6 +118,15 @@
   display: block;
   padding: 30px;
   text-align: center;
+  font-family: georgia, serif;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .tabcontent {
+    padding: 15px;
+    font-size: 16px;
+  }
 }
 
 /* Stile individuale tab
@@ -117,11 +156,39 @@ body {
   background-size: 100% 100%;*/
 }
 
+@media only screen and (max-width: 700px) {
+  body {
+    width: 670px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  html {
+    width: 690px;
+  }
+}
+
+.page {
+  margin: 100px;
+}
+
+@media only screen and (max-width: 700px) {
+  .page {
+    margin: 30px;
+  }
+}
+
 .par {
   text-align:justify;
   font-size:18px;
   font-weight:normal;
   font-family:Georgia,serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .par {
+    font-size:14px;
+  }
 }
 
 .tit {
@@ -131,9 +198,23 @@ body {
   font-family:Georgia,serif;
 }
 
+@media only screen and (max-width: 600px) {
+  .tit {
+    font-size:25px;
+    padding-top: 40px;
+  }
+}
+
 .subtit {
   text-align:center;
   font-size:25px;
   font-weight:bold;
   font-family:Georgia,serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .subtit {
+    font-size:20px;
+    padding-top: 10px;
+  }
 }
