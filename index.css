@@ -460,6 +460,12 @@ button:hover, a:hover {
   font-family: Georgia,serif;
 }
 
+@media only screen and (max-width: 600px) {
+  .over-lay {
+    opacity:1;
+  }
+}
+
 .containerx:hover .over-lay {
   opacity: 1;
 }
