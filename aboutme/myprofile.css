@@ -5,15 +5,16 @@
 body {
   background-color: #474e5d;
   font-family: Helvetica, sans-serif;
-  background-image: url('myprofiletest.jpg');
-  background-repeat: no-repeat;
+  /*background-image: url('myprofiletest.jpg');
+  background-repeat: no-repeat;*/
+  margin: 0px;
 }
 
-@media only screen and (max-width: 500px) {
+/*@media only screen and (max-width: 500px) {
   body {
     background-image: url('mptest.jpg')
   }
-}
+}*/
 
 .timeline {
   position: relative;
@@ -162,12 +163,26 @@ body {
   color: black;
   font-family: Georgia, serif;
   height: 540px;
+  background-image: url('myprofiletest.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 500px) {
+  .header {
+    background-image: url('mptest.jpg')
+  }
+}
+
+.resize {
+  margin: 0px;
+  padding: 20px;
 }
 
 @media only screen and (max-width: 600px) {
   .resize {
     font-size: 22px;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
     text-align: left;
     margin-left: 70px;
   }
@@ -184,7 +199,7 @@ body {
 
 .top-right {
   float: right;
-  padding-right: 20px;
+  padding: 20px;
 }
 
 .mySidenav a {
