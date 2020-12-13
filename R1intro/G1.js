@@ -32,7 +32,7 @@ svg1.append("g")
   .attr("text-anchor", "end")
   .attr("x", width_g1)
   .attr("y", height_g1+50)
-  .text("Stabilimenti");
+  .text("Aree");
 
 // Asse Y 
 var y = d3.scaleLinear()

@@ -34,7 +34,7 @@ d3.csv("https://raw.githubusercontent.com/AMC2202/test/main/table/G2new.csv", fu
     .attr("text-anchor", "end")
     .attr("x", width_g2)
     .attr("y", height_g2+50)
-    .text("Stabilimenti");
+    .text("Aree");
 
   // Asse Y 
   var y = d3.scaleBand()
@@ -51,7 +51,7 @@ d3.csv("https://raw.githubusercontent.com/AMC2202/test/main/table/G2new.csv", fu
     .attr("text-anchor", "end")
     .attr("x", 0)
     .attr("y", -15)
-    .text("Dipartimenti")
+    .text("Sezioni")
     .attr("text-anchor", "start")
 
 // Scala di colore

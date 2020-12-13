@@ -274,7 +274,7 @@ d3.csv("https://raw.githubusercontent.com/AMC2202/test/main/table/G3.csv", funct
   .attr("text-anchor", "end")
   .attr("x", width_g3)
   .attr("y", height_g3+50 )
-  .text("Dipartimenti");
+  .text("Sezioni");
 
   // Scala asse Y
   var y = d3.scaleLinear()
