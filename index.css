@@ -499,6 +499,9 @@ button:hover, a:hover {
 
 @media screen and (max-width: 600px) {
   .subhead {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
     font-size: 12px;
   }
 }
@@ -512,6 +515,8 @@ button:hover, a:hover {
 
 @media screen and (max-width: 600px) {
   .subheadx {
+    margin-left: 20px;
+    margin-right: 20px;
     font-size: 14px;
   }
 }
@@ -526,3 +531,11 @@ button:hover, a:hover {
   font-size: 13px;
   font-family: Georgia,serif;
 }
+
+/*@media screen and (max-width: 600px) {
+  .footer {
+    
+  }*/
+
+
+
