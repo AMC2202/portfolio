@@ -40,3 +40,40 @@ body,html {
     color: #f1f1f1;
     font-size: 30px;
 }
+
+/* Schermi grandi o ad alta risoluzione */
+@media all and (max-width: 1690px) { 
+  .wip, .timer {
+    font-size: 34px;
+  }
+}
+
+/* Schermi Desktop o Portatili */
+@media all and (min-width: 1280px) and (max-width: 1689px) { 
+  .wip, .timer {
+    font-size: 30px;
+  }
+}
+
+/* Tablet in modalità orizzontale */
+@media all and (min-width: 737px) and (max-width: 1279px) { 
+  .wip, .timer {
+    font-size: 26px;
+  }
+}
+
+/* Tablet in modalità verticale */
+@media all and (min-width: 481px) and (max-width: 736px) {
+  .wip, .timer {
+    font-size: 22px;
+  }
+}
+
+/* Smartphone o piccoli Tablet */
+@media all and (max-width: 480px) {
+  .wip, .timer {
+    font-size: 20px;
+  }
+} 
+
+
