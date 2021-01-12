@@ -1,3 +1,5 @@
+* {box-sizing:border-box}
+
 /* tab buttons */
 .tablinkP {
   background-color: #555;
