@@ -102,32 +102,32 @@ body {
   font-family: Georgia, serif;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 736px) {
   .content {
     padding: 15px;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 736px) {
   .resizeh2 {
     font-size: 18px;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 736px) {
   .resizeh4 {
     font-size: 13px;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 736px) {
   .resizep {
     font-size: 13px;
   }
 }
 
-/* Media queries - Responsive timeline su schermi di larghezza inferiore a 600px */
-@media screen and (max-width: 600px) {
+/* Media queries - Responsive timeline su schermi di larghezza inferiore a 736px */
+@media screen and (max-width: 736px) {
 /* Place the timelime to the left */
   .timeline::after {
     left: 31px;
@@ -176,23 +176,66 @@ body {
 
 @media only screen and (min-width: 1500px) {
   .header {
-    background-image: url('profile.jpg')
+    background-image: url('cover.webp')
   }
 }
 
 .resize {
   margin: 0px;
-  padding: 20px;
+  padding-left: 13%;
+  padding-top: 5%;
+  padding-bottom: 3%;
 }
 
-@media only screen and (max-width: 600px) {
+/* Schermi grandi o ad alta risoluzione */
+@media all and (min-width: 1690px) { 
+  .resize {
+    font-size: 34px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+}
+
+/* Schermi Desktop o Portatili */
+@media all and (min-width: 1280px) and (max-width: 1689px) { 
+  .resize {
+    font-size: 30px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+}
+
+/* Tablet in modalità orizzontale */
+@media all and (min-width: 737px) and (max-width: 1279px) {
+  .resize {
+    font-size: 24px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+} 
+
+/* Tablet in modalità verticale */
+@media all and (min-width: 481px) and (max-width: 736px) { 
+  .resize {
+    font-size: 18px;
+  }
+}
+
+/* Smartphone o piccoli Tablet */
+@media all and (max-width: 480px) { 
+  .resize {
+    font-size: 18px;
+  }
+} 
+
+/*@media only screen and (max-width: 600px) {
   .resize {
     font-size: 22px;
-    /*margin-top: 30px;*/
+    /*margin-top: 30px;
     text-align: left;
     margin-left: 70px;
   }
-}
+}*/
 
 /*.centered {
   position: absolute;
@@ -205,7 +248,7 @@ body {
 
 .top-right {
   float: right;
-  padding: 20px;
+  padding: 15px;
 }
 
 .mySidenav a {
@@ -224,7 +267,7 @@ body {
   left: 0; /*Transizione al passaggio del mouse*/
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 736px) {
   .mySidenav a {
     font-size: 0%;
     padding: 20px; 
@@ -270,6 +313,41 @@ body {
   margin: 0;
 }
 
+/* Schermi grandi o ad alta risoluzione */
+@media all and (min-width: 1690px) { 
+  .icon {
+    font-size: 34px;
+  }
+}
+
+/* Schermi Desktop o Portatili */
+@media all and (min-width: 1280px) and (max-width: 1689px) { 
+  .icon {
+    font-size: 30px;
+  }
+}
+
+/* Tablet in modalità orizzontale */
+@media all and (min-width: 737px) and (max-width: 1279px) {
+  .icon {
+    font-size: 28px;
+  }
+} 
+
+/* Tablet in modalità verticale */
+@media all and (min-width: 481px) and (max-width: 736px) { 
+  .icon {
+    font-size: 26px;
+  }
+}
+
+/* Smartphone o piccoli Tablet */
+@media all and (max-width: 480px) { 
+  .icon {
+    font-size: 24px;
+  }
+} 
+
 .headtit {
   margin-bottom: 5px;
 }
@@ -278,48 +356,93 @@ body {
   margin: 0px;
 }
 
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 1279px) {
   .marpar {
     font-size: 13px;
     text-align: left;
-    margin-left: 60px;
+    margin-left: 20%;
   }
-}
+}*/
 
 .marbot {
   margin-bottom:0px;
 }
 
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 1279px) {
   .marbot {
     font-size: 13px;
     text-align: left;
-    margin-left: 60px;
+    margin-left: 20%;
   }
-}
+}*/
 
 .martop {
   margin-top:0px;
 }
 
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 1279px) {
   .martop {
     font-size: 13px;
     text-align: left;
-    margin-left: 60px;
+    margin-left: 20%;
     
   }
+}*/
+
+/* Schermi grandi o ad alta risoluzione */
+@media all and (min-width: 1690px) { 
+  .marpar, .marbot, .martop {
+    font-size: 22px;
+    text-align: left;
+    margin-left: 15%;
+  }
 }
+
+/* Schermi Desktop o Portatili */
+@media all and (min-width: 1280px) and (max-width: 1689px) { 
+  .marpar, .marbot, .martop {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 15%;
+  }
+}
+
+/* Tablet in modalità orizzontale */
+@media all and (min-width: 737px) and (max-width: 1279px) {
+  .marpar, .marbot, .martop {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 15%;
+  }
+} 
+
+/* Tablet in modalità verticale */
+@media all and (min-width: 481px) and (max-width: 736px) { 
+  .marpar, .marbot, .martop {
+    font-size: 14px;
+    text-align: left;
+    margin-left: 15%;
+  }
+}
+
+/* Smartphone o piccoli Tablet */
+@media all and (max-width: 480px) { 
+  .marpar, .marbot, .martop {
+    font-size: 13px;
+    text-align: left;
+    margin-left: 20%;
+  }
+} 
 
 .lastrow {
   font-size:large;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1279px) {
   .lastrow {
     font-size: 14px;
     text-align: left;
-    margin-left: 60px;
+    margin-left: 20%;
     
   }
 }
@@ -329,7 +452,7 @@ body {
   margin: 0px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 736px) {
   .tmarpar {
     font-size: 13px;
     text-align: left;
@@ -340,7 +463,7 @@ body {
   margin-bottom:0px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 736px) {
   .tmarbot {
     font-size: 13px;
     text-align: left;
@@ -351,7 +474,7 @@ body {
   margin-top:0px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 736px) {
   .tmartop {
     font-size: 13px;
     text-align: left;
@@ -384,9 +507,11 @@ body {
   color:white;
   font-family:Georgia,serif;
   font-style:italic;
+  margin-right: 2%;
+  margin-left: 2%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 736px) {
   .bookmark1 {
     text-align: right;
     font-size: 22px;
@@ -398,9 +523,10 @@ body {
   font-family:Georgia,serif;
   font-style:italic;
   text-align: right;
+  margin-right: 2%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 736px) {
   .bookmark2 {
     text-align: right;
     font-size: 22px;
