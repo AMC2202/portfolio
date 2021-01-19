@@ -18,8 +18,8 @@ body {
 
 .timeline {
   position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
+  /*max-width: 1200px;*/
+  margin: 2%;
 }
 
 .timeline::after {
@@ -95,31 +95,133 @@ body {
 }
 
 .content {
-  padding: 20px 30px;
+  padding: 5%;
   background-color: #d9d9d9;
   position: relative;
   border-radius: 6px;
   font-family: Georgia, serif;
 }
 
-@media only screen and (max-width: 736px) {
-  .content {
-    padding: 15px;
+/* Schermi ad altissima risoluzione */
+@media all and (min-width: 2561px) and (max-width: 3200px) {
+  .resizeh2 {
+    font-size: 42px;
   }
 }
 
+/* Schermi ad altissima risoluzione */
+@media all and (min-width: 2561px) and (max-width: 3200px) {
+  .resizeh4 {
+    font-size: 36px;
+  }
+}
+
+/* Schermi ad altissima risoluzione */
+@media all and (min-width: 2561px) and (max-width: 3200px) {
+  .resizep {
+    font-size: 36px;    
+  }
+}
+
+/* Schermi ad alta risoluzione */
+@media all and (min-width: 2049px) and (max-width: 2560px) {
+  .resizeh2 {
+    font-size: 36px;
+  }
+}
+
+/* Schermi ad alta risoluzione */
+@media all and (min-width: 2049px) and (max-width: 2560px) {
+  .resizeh4 {
+    font-size: 30px;
+  }
+}
+
+/* Schermi ad alta risoluzione */
+@media all and (min-width: 2049px) and (max-width: 2560px) {
+  .resizep {
+    font-size: 30px;
+  }
+}
+
+/* Schermi grandi o ad alta risoluzione */
+@media all and (min-width: 1690px) and (max-width: 2048px) {
+  .resizeh2 {
+    font-size: 36px;
+  }
+}
+
+/* Schermi grandi o ad alta risoluzione */
+@media all and (min-width: 1690px) and (max-width: 2048px) {
+  .resizeh4 {
+    font-size: 24px;
+  }
+}
+
+/* Schermi grandi o ad alta risoluzione */
+@media all and (min-width: 1690px) and (max-width: 2048px) {
+  .resizep {
+    font-size: 24px;
+  }
+}
+
+/* Schermi Desktop o Portatili */
+@media all and (min-width: 1280px) and (max-width: 1689px) {
+  .resizeh2 {
+    font-size: 22px;
+  }
+}
+
+/* Schermi Desktop o Portatili */
+@media all and (min-width: 1280px) and (max-width: 1689px) {
+  .resizeh4 {
+    font-size: 18px;
+  }
+}
+
+/* Schermi Desktop o Portatili */
+@media all and (min-width: 1280px) and (max-width: 1689px) {
+  .resizep {
+    font-size: 18px;
+  }
+}
+
+/* Tablet in modalità orizzontale */
+@media all and (min-width: 737px) and (max-width: 1279px) {
+  .resizeh2 {
+    font-size: 18px;
+  }
+}
+
+/* Tablet in modalità orizzontale */
+@media all and (min-width: 737px) and (max-width: 1279px) {
+  .resizeh4 {
+    font-size: 14px;
+  }
+}
+
+/* Tablet in modalità orizzontale */
+@media all and (min-width: 737px) and (max-width: 1279px) {
+  .resizep {
+    font-size: 14px;
+  }
+}
+
+/* Tablet in modalità verticale */
 @media only screen and (max-width: 736px) {
   .resizeh2 {
     font-size: 18px;
   }
 }
 
+/* Tablet in modalità verticale */
 @media only screen and (max-width: 736px) {
   .resizeh4 {
     font-size: 13px;
   }
 }
 
+/* Tablet in modalità verticale */
 @media only screen and (max-width: 736px) {
   .resizep {
     font-size: 13px;
@@ -168,7 +270,63 @@ body {
   background-size: cover;
 }
 
-@media only screen and (max-width: 500px) {
+/* Schermi ad altissima risoluzione */
+@media all and (min-width: 2561px) and (max-width: 3200px) {
+  .header {
+    height: 1100px;
+    background-image: url('bigcover3250x1100.webp')
+  }
+}
+
+/* Schermi ad alta risoluzione */
+@media all and (min-width: 2049px) and (max-width: 2560px) {
+  .header {
+    height: 850px;
+    background-image: url('bigcover2600x850.webp')
+  }
+}
+
+/* Schermi grandi o ad alta risoluzione */
+@media all and (min-width: 1690px) and (max-width: 2048px) {
+  .header {
+    height: 800px;
+    background-image: url('cover2100x800.webp')
+  }
+}
+
+/* Schermi Desktop o Portatili */
+@media all and (min-width: 1280px) and (max-width: 1689px) {
+  .header {
+    height: 600px;
+    background-image: url('cover1700x600.webp')
+  }
+}
+
+/* Tablet in modalità orizzontale */
+@media all and (min-width: 737px) and (max-width: 1279px) {
+  .header {
+    height: 500px;
+    background-image: url('cover1300x500.webp')
+  }
+}
+
+/* Tablet in modalità verticale */
+@media all and (min-width: 481px) and (max-width: 736px) {
+  .header {
+    height: 500px;
+    background-image: url('cover800x500.webp')
+  }
+}
+
+/* Smartphone o piccoli Tablet */
+@media all and (max-width: 480px) {
+  .header {
+    height: 550px;
+    background-image: url('cover500x550.webp')
+  }
+} 
+
+/*@media only screen and (max-width: 500px) {
   .header {
     background-image: url('mptest.webp');
   }
@@ -186,7 +344,7 @@ body {
     height: 800px;
     background-image: url('fino2600px.webp')
   }
-}
+}*/
 
 .resize {
   margin: 0px;
@@ -195,12 +353,30 @@ body {
   padding-bottom: 3%;
 }
 
-/* Schermi grandi o ad alta risoluzione */
-@media all and (min-width: 1690px) { 
+/* Schermi ad altissima risoluzione */
+@media all and (min-width: 2561px) and (max-width: 3200px) {
   .resize {
-    font-size: 30px;
+    font-size: 46px;
     padding-top: 2%;
-    padding-bottom: 0.5%;
+    padding-bottom: 2%;
+  }
+}
+
+/* Schermi ad alta risoluzione */
+@media all and (min-width: 2049px) and (max-width: 2560px) {
+  .resize {
+    font-size: 40px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+}
+
+/* Schermi grandi o ad alta risoluzione */
+@media all and (min-width: 1690px) and (max-width: 2048px) { 
+  .resize {
+    font-size: 34px;
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
 }
 
@@ -321,17 +497,31 @@ body {
   margin: 0;
 }
 
-/* Schermi grandi o ad alta risoluzione */
-@media all and (min-width: 1690px) { 
+/* Schermi ad altissima risoluzione */
+@media all and (min-width: 2561px) and (max-width: 3200px) {
   .icon {
-    font-size: 34px;
+    font-size: 64px;
+  }
+}
+
+/* Schermi ad alta risoluzione */
+@media all and (min-width: 2049px) and (max-width: 2560px) {
+  .icon {
+    font-size: 52px;
+  }
+}
+
+/* Schermi grandi o ad alta risoluzione */
+@media all and (min-width: 1690px) and (max-width: 2048px) { 
+  .icon {
+    font-size: 44px;
   }
 }
 
 /* Schermi Desktop o Portatili */
 @media all and (min-width: 1280px) and (max-width: 1689px) { 
   .icon {
-    font-size: 30px;
+    font-size: 34px;
   }
 }
 
@@ -397,10 +587,28 @@ body {
   }
 }*/
 
-/* Schermi grandi o ad alta risoluzione */
-@media all and (min-width: 1690px) { 
+/* Schermi ad altissima risoluzione */
+@media all and (min-width: 2561px) and (max-width: 3200px) {
   .marpar, .marbot, .martop {
-    font-size: 18px;
+    font-size: 36px;
+    text-align: left;
+    margin-left: 15%;
+  }
+}
+
+/* Schermi ad alta risoluzione */
+@media all and (min-width: 2049px) and (max-width: 2560px) {
+  .marpar, .marbot, .martop {
+    font-size: 30px;
+    text-align: left;
+    margin-left: 15%;
+  }
+}
+
+/* Schermi grandi o ad alta risoluzione */
+@media all and (min-width: 1690px) and (max-width: 2048px) { 
+  .marpar, .marbot, .martop {
+    font-size: 24px;
     text-align: left;
     margin-left: 15%;
   }
@@ -409,7 +617,7 @@ body {
 /* Schermi Desktop o Portatili */
 @media all and (min-width: 1280px) and (max-width: 1689px) { 
   .marpar, .marbot, .martop {
-    font-size: 16px;
+    font-size: 18px;
     text-align: left;
     margin-left: 15%;
   }
@@ -418,7 +626,7 @@ body {
 /* Tablet in modalità orizzontale */
 @media all and (min-width: 737px) and (max-width: 1279px) {
   .marpar, .marbot, .martop {
-    font-size: 15px;
+    font-size: 16px;
     text-align: left;
     margin-left: 15%;
   }
@@ -455,9 +663,99 @@ body {
   }
 }
 
+.link {
+  font-size: 18px;
+}
+
+/* Schermi ad altissima risoluzione */
+@media all and (min-width: 2561px) and (max-width: 3200px) {
+  .link {
+    font-size: 36px;
+    text-align: left;
+  }
+}
+
+/* Schermi ad alta risoluzione */
+@media all and (min-width: 2048px) and (max-width: 2560px) {
+  .link {
+    font-size: 30px;
+    text-align: left;
+  }
+}
+
+/* Schermi grandi o ad alta risoluzione */
+@media all and (min-width: 1690px) and (max-width: 2048px) {
+  .link {
+    font-size: 24px;
+    text-align: left;
+  }
+}
+
+/* Schermi Desktop o Portatili */
+@media all and (min-width: 1280px) and (max-width: 1689px) {
+  .link {
+    font-size: 18px;
+    text-align: left;
+  }
+}
+
+/* Tablet in modalità orizzontale */
+@media all and (min-width: 737px) and (max-width: 1279px) {
+  .link {
+    font-size: 14px;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 736px) {
+  .link {
+    font-size: 13px;
+    text-align: left;
+  }
+}
 
 .tmarpar {
   margin: 0px;
+}
+
+/* Schermi ad altissima risoluzione */
+@media all and (min-width: 2561px) and (max-width: 3200px) {
+  .tmarpar {
+    font-size: 36px;
+    text-align: left;
+  }
+}
+
+/* Schermi ad alta risoluzione */
+@media all and (min-width: 2048px) and (max-width: 2560px) {
+  .tmarpar {
+    font-size: 30px;
+    text-align: left;
+  }
+}
+
+/* Schermi grandi o ad alta risoluzione */
+@media all and (min-width: 1690px) and (max-width: 2048px) {
+  .tmarpar {
+    font-size: 24px;
+    text-align: left;
+  }
+}
+
+/* Schermi Desktop o Portatili */
+@media all and (min-width: 1280px) and (max-width: 1689px) {
+  .tmarpar {
+    font-size: 18px;
+    text-align: left;
+  }
+}
+
+/* Tablet in modalità orizzontale */
+@media all and (min-width: 737px) and (max-width: 1279px) {
+  .tmarpar {
+    font-size: 14px;
+    text-align: left;
+  }
 }
 
 @media only screen and (max-width: 736px) {
@@ -471,6 +769,46 @@ body {
   margin-bottom:0px;
 }
 
+/* Schermi ad altissima risoluzione */
+@media all and (min-width: 2561px) and (max-width: 3200px) {
+  .tmarbot {
+    font-size: 36px;
+    text-align: left;
+  }
+}
+
+/* Schermi ad alta risoluzione */
+@media all and (min-width: 2048px) and (max-width: 2560px) {
+  .tmarbot {
+    font-size: 30px;
+    text-align: left;
+  }
+}
+
+/* Schermi grandi o ad alta risoluzione */
+@media all and (min-width: 1690px) and (max-width: 2048px) {
+  .tmarbot {
+    font-size: 24px;
+    text-align: left;
+  }
+}
+
+/* Schermi Desktop o Portatili */
+@media all and (min-width: 1280px) and (max-width: 1689px) {
+  .tmarbot {
+    font-size: 18px;
+    text-align: left;
+  }
+}
+
+/* Tablet in modalità orizzontale */
+@media all and (min-width: 737px) and (max-width: 1279px) {
+  .tmarbot {
+    font-size: 14px;
+    text-align: left;
+  }
+}
+
 @media only screen and (max-width: 736px) {
   .tmarbot {
     font-size: 13px;
@@ -480,6 +818,46 @@ body {
 
 .tmartop {
   margin-top:0px;
+}
+
+/* Schermi ad altissima risoluzione */
+@media all and (min-width: 2561px) and (max-width: 3200px) {
+  .tmartop {
+    font-size: 36px;
+    text-align: left;
+  }
+}
+
+/* Schermi ad alta risoluzione */
+@media all and (min-width: 2048px) and (max-width: 2560px) {
+  .tmartop {
+    font-size: 30px;
+    text-align: left;
+  }
+}
+
+/* Schermi grandi o ad alta risoluzione */
+@media all and (min-width: 1690px) and (max-width: 2048px) {
+  .tmartop {
+    font-size: 24px;
+    text-align: left;
+  }
+}
+
+/* Schermi Desktop o Portatili */
+@media all and (min-width: 1280px) and (max-width: 1689px) {
+  .tmartop {
+    font-size: 18px;
+    text-align: left;
+  }
+}
+
+/* Tablet in modalità orizzontale */
+@media all and (min-width: 737px) and (max-width: 1279px) {
+  .tmartop {
+    font-size: 14px;
+    text-align: left;
+  }
 }
 
 @media only screen and (max-width: 736px) {
@@ -515,7 +893,7 @@ body {
   color:white;
   font-family:Georgia,serif;
   font-style:italic;
-  margin-right: 2%;
+  margin-right: 8%;
   margin-left: 2%;
 }
 
@@ -531,12 +909,13 @@ body {
   font-family:Georgia,serif;
   font-style:italic;
   text-align: right;
-  margin-right: 2%;
+  margin-right: 5%;
 }
 
 @media only screen and (max-width: 736px) {
   .bookmark2 {
     text-align: right;
     font-size: 22px;
+    margin-right: 8%;
   }
 }
