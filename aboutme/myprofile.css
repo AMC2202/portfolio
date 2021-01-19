@@ -163,20 +163,28 @@ body {
   color: black;
   font-family: Georgia, serif;
   height: 540px;
-  background-image: url('myprofiletest.jpg');
+  background-image: url('myprofiletest.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 @media only screen and (max-width: 500px) {
   .header {
-    background-image: url('mptest.jpg')
+    background-image: url('mptest.webp');
   }
 }
 
 @media only screen and (min-width: 1500px) {
   .header {
+    height: 600px;
     background-image: url('cover.webp')
+  }
+}
+
+@media only screen and (min-width: 2100px) {
+  .header {
+    height: 800px;
+    background-image: url('fino2600px.webp')
   }
 }
 
@@ -190,9 +198,9 @@ body {
 /* Schermi grandi o ad alta risoluzione */
 @media all and (min-width: 1690px) { 
   .resize {
-    font-size: 34px;
+    font-size: 30px;
     padding-top: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 0.5%;
   }
 }
 
@@ -392,7 +400,7 @@ body {
 /* Schermi grandi o ad alta risoluzione */
 @media all and (min-width: 1690px) { 
   .marpar, .marbot, .martop {
-    font-size: 22px;
+    font-size: 18px;
     text-align: left;
     margin-left: 15%;
   }
