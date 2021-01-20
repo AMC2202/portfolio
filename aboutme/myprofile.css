@@ -897,6 +897,41 @@ body {
   margin-left: 2%;
 }
 
+/* Schermi ad altissima risoluzione */
+@media all and (min-width: 2561px) and (max-width: 3200px) {
+  .bookmark1 {
+    font-size: 50px;
+  }
+}
+
+/* Schermi ad alta risoluzione */
+@media all and (min-width: 2048px) and (max-width: 2560px) {
+  .bookmark1 {
+    font-size: 42px;
+  }
+}
+
+/* Schermi grandi o ad alta risoluzione */
+@media all and (min-width: 1690px) and (max-width: 2048px) {
+  .bookmark1 {
+    font-size: 36px;
+  }
+}
+
+/* Schermi Desktop o Portatili */
+@media all and (min-width: 1280px) and (max-width: 1689px) {
+  .bookmark1 {
+    font-size: 28px;
+  }
+}
+
+/* Tablet in modalità orizzontale */
+@media all and (min-width: 737px) and (max-width: 1279px) {
+  .bookmark1 {
+    font-size: 24px;
+  }
+}
+
 @media only screen and (max-width: 736px) {
   .bookmark1 {
     text-align: right;
@@ -912,6 +947,41 @@ body {
   margin-right: 5%;
 }
 
+/* Schermi ad altissima risoluzione */
+@media all and (min-width: 2561px) and (max-width: 3200px) {
+  .bookmark2 {
+    font-size: 50px;
+  }
+}
+
+/* Schermi ad alta risoluzione */
+@media all and (min-width: 2048px) and (max-width: 2560px) {
+  .bookmark2 {
+    font-size: 42px;
+  }
+}
+
+/* Schermi grandi o ad alta risoluzione */
+@media all and (min-width: 1690px) and (max-width: 2048px) {
+  .bookmark2 {
+    font-size: 36px;
+  }
+}
+
+/* Schermi Desktop o Portatili */
+@media all and (min-width: 1280px) and (max-width: 1689px) {
+  .bookmark2 {
+    font-size: 28px;
+  }
+}
+
+/* Tablet in modalità orizzontale */
+@media all and (min-width: 737px) and (max-width: 1279px) {
+  .bookmark2 {
+    font-size: 24px;
+  }
+}
+
 @media only screen and (max-width: 736px) {
   .bookmark2 {
     text-align: right;
@@ -919,3 +989,4 @@ body {
     margin-right: 8%;
   }
 }
+
