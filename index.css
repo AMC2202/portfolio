@@ -210,35 +210,35 @@ img {
 /* Schermi grandi o ad alta risoluzione */
 @media all and (min-width: 1690px) {
   .mySlides .content {
-    bottom: 2.5%;
+    bottom: 2%;
   }
 }
 
 /* Schermi Desktop o Portatili */
 @media all and (min-width: 1280px) and (max-width: 1689px) {
   .mySlides .content {
-    bottom: 3%;
+    bottom: 2.5%;
   }
 }
 
 /* Tablet in modalità orizzontale */
 @media all and (min-width: 737px) and (max-width: 1279px) {
   .mySlides .content {
-    bottom: 4.5%;
+    bottom: 4%;
   }
 }
 
 /* Tablet in modalità verticale */
 @media all and (min-width: 481px) and (max-width: 736px) {
   .mySlides .content {
-    bottom: 5%;
+    bottom: 4%;
   }
 }
 
 /* Smartphone o piccoli Tablet */
 @media all and (max-width: 480px) {
   .mySlides .content {
-    bottom: 6.8%;
+    bottom: 5.5%;
   }
 } 
 
@@ -760,7 +760,7 @@ button:hover, a:hover {
   .over-lay {
     opacity: 1;
     font-size: 26px;
-    bottom: 5%;
+    bottom: 4.5%;
   }
 }
 
@@ -769,7 +769,7 @@ button:hover, a:hover {
   .over-lay {
     opacity: 1;
     font-size: 22px;
-    bottom: 6.5%;
+    bottom: 5.5%;
   }
 }
 
@@ -778,7 +778,7 @@ button:hover, a:hover {
   .over-lay {
     opacity: 1;
     font-size: 16px;
-    bottom: 9.5%;
+    bottom: 7%;
   }
 }
 
@@ -787,7 +787,7 @@ button:hover, a:hover {
   .over-lay {
     opacity: 1;
     font-size: 16px;
-    bottom: 8%;
+    bottom: 7.2%;
   }
 }
 
@@ -796,7 +796,7 @@ button:hover, a:hover {
   .over-lay {
     opacity: 1;
     font-size: 14px;
-    bottom: 8%;
+    bottom: 6.5%;
   }
 } 
 
