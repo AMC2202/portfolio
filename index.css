@@ -12,6 +12,48 @@ img {
   margin-top: 8%;
 }
 
+.source {
+  text-align: right;
+  margin: 0%;
+  font-family: Georgia, serif;
+  font-size: 11px;
+}
+
+/* Schermi grandi o ad alta risoluzione */
+@media all and (min-width: 1690px) {
+  .source {
+    font-size: 12px;
+  }
+}
+
+/* Schermi Desktop o Portatili */
+@media all and (min-width: 1280px) and (max-width: 1689px) {
+  .source {
+    font-size: 11px;
+  }
+}
+
+/* Tablet in modalità orizzontale */
+@media all and (min-width: 737px) and (max-width: 1279px) {
+  .source {
+    font-size: 10px;
+  }
+}
+
+/* Tablet in modalità verticale */
+@media all and (min-width: 481px) and (max-width: 736px) {
+  .source {
+    font-size: 9px;
+  }
+}
+
+/* Smartphone o piccoli Tablet */
+@media all and (max-width: 480px) {
+  .source {
+    font-size: 8px;
+  }
+} 
+
 /* Schermi grandi o ad alta risoluzione 
 @media all and (min-width: 1690px) { }
 
@@ -162,25 +204,43 @@ img {
   color: #f1f1f1; 
   font-family: Georgia, serif;
   width: 100%; 
-  padding: 1.5%; 
+  padding: 1.5%;
 }
 
-/*@media only screen and (max-width: 600px) {
-  .mySlides .content{
-    width: 350px;
-    padding: 15px; 
-    margin-bottom: 19px;
+/* Schermi grandi o ad alta risoluzione */
+@media all and (min-width: 1690px) {
+  .mySlides .content {
+    bottom: 2.5%;
   }
-}*/
+}
 
-/*@media only screen and (max-width: 600px) {
-  .fade{
-    width: 350px;
-    padding: 15px; 
-    margin-bottom: 19px;
+/* Schermi Desktop o Portatili */
+@media all and (min-width: 1280px) and (max-width: 1689px) {
+  .mySlides .content {
+    bottom: 3%;
   }
-}*/
+}
 
+/* Tablet in modalità orizzontale */
+@media all and (min-width: 737px) and (max-width: 1279px) {
+  .mySlides .content {
+    bottom: 4.5%;
+  }
+}
+
+/* Tablet in modalità verticale */
+@media all and (min-width: 481px) and (max-width: 736px) {
+  .mySlides .content {
+    bottom: 5%;
+  }
+}
+
+/* Smartphone o piccoli Tablet */
+@media all and (max-width: 480px) {
+  .mySlides .content {
+    bottom: 6.8%;
+  }
+} 
 
 .parx {
   font-size:40px; 
@@ -700,7 +760,7 @@ button:hover, a:hover {
   .over-lay {
     opacity: 1;
     font-size: 26px;
-    bottom: 2%;
+    bottom: 5%;
   }
 }
 
@@ -709,25 +769,25 @@ button:hover, a:hover {
   .over-lay {
     opacity: 1;
     font-size: 22px;
-    bottom: 2%;
+    bottom: 6.5%;
   }
 }
 
 /* Tablet in modalità orizzontale */
-@media all and (min-width: 737px) and (max-width: 1279px) { 
+@media all and (min-width: 755px) and (max-width: 1279px) { 
   .over-lay {
     opacity: 1;
     font-size: 16px;
-    bottom: 2%;
+    bottom: 9.5%;
   }
 }
 
 /* Tablet in modalità verticale */
-@media all and (min-width: 481px) and (max-width: 736px) { 
+@media all and (min-width: 481px) and (max-width: 754px) { 
   .over-lay {
     opacity: 1;
     font-size: 16px;
-    bottom: 2.5%;
+    bottom: 8%;
   }
 }
 
@@ -736,7 +796,7 @@ button:hover, a:hover {
   .over-lay {
     opacity: 1;
     font-size: 14px;
-    bottom: 3%;
+    bottom: 8%;
   }
 } 
 
@@ -864,7 +924,7 @@ button:hover, a:hover {
 .footer {
   width: 100%;
   margin-bottom: 2%;
-  margin-top: 8%;
+  margin-top: 15%;
   padding: 1px;
   text-align: center;
   background: #333333; /*#777;*/
