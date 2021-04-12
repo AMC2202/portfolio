@@ -1,3 +1,19 @@
+/* TABLE OF CONTENT */
+/* 
+    1 - DESKTOP STYLE (shared);
+        1.1 - Element style;
+        1.2 - Custom classes;
+        1.3 - Default classes;
+    2 - MOBILE and other device STYLE (media query);
+    3 - ANIMATION (keyframes).
+*/
+
+
+/* DESKTOP STYLE (shared) */
+/* 
+    1.1 - Element style.
+*/
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -11,11 +27,9 @@ body {
     padding: 2% 5%;
 }
 
-@media only screen and (max-width: 768px) {
-    body {
-        padding-bottom: 150px;
-    }
-}
+/* 
+    1.2 - Custom classes.
+*/
 
 .cutout_title {
     margin: 8% 20%;
@@ -45,22 +59,17 @@ body {
     text-align: center;
 }
 
-.blink_me {
-    animation: blinker 1s linear infinite;
-}
-  
-@keyframes blinker {
-    50% {
-      opacity: 0;
-    }
-}
 
-.container {
+.archive_card {
     border: 2px solid #f1f1f1;
     padding: 3%;
     width: 100%;
     box-shadow: 3px 6px 5px grey;
+}
 
+.title_card {
+    color: white; margin:1% 10%;
+    text-shadow:2px 2px 4px #d2c0ad;
 }
 
 .accordion {
@@ -71,7 +80,6 @@ body {
     font-size: large;
     width: 80%;
     margin: 1% 10% 0% 10%;
-    /* margin: 1% 2% 0% 2%; */
     text-align: left;
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
@@ -164,4 +172,105 @@ body {
   
 .tooltip:hover .text {
     visibility: visible;
+}
+
+
+/* MOBILE and other device STYLE */
+
+@media only screen and (max-width: 600px){
+    .grid {
+        display: inline-block;
+    }
+
+    .col-1 {
+        width: 100%;
+        padding: 1%;
+    }
+    
+    .col-2 {
+        width: 100%;
+        padding: 1%;
+        font-size: smaller;
+    }
+
+    .down, .down-nd {
+        margin: 10% 35%;
+    }
+
+    .list {
+        padding: 5%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding-bottom: 150px;
+    }
+
+    .blur_box {
+        font-size: 90%;
+        width: 70%;
+        margin: 10% 15% 15% 15%;
+    }
+
+    .title_card {
+        font-size: 77%;
+        margin-top: 3%;
+    }
+
+    .accordion {
+        font-size: small;
+        margin-bottom: 2%;
+    }
+
+}
+
+@media all and (min-width: 601px) and (max-width: 992px) {
+    .down, .down-nd {
+        margin: 200% 25%;
+    }
+
+    .col-2 {
+        font-size: small;
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    .down, .down-nd {
+        margin: 60% 25%;
+    }
+
+    .col-2 {
+        font-size: x-large;
+    }
+
+    .blur_box {
+        font-size: 200%;
+    }
+
+    .title_card {
+        font-size: 250%;
+        margin-top: 3%;
+    }
+
+    .accordion {
+        font-size: xx-large;
+        margin-bottom: 2%;
+    }
+}
+
+
+
+
+/* ANIMATION */
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+}
+  
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
 }
