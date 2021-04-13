@@ -197,6 +197,10 @@ body {
         margin: 10% 35%;
     }
 
+    .down:hover {
+        transform: none;
+    }
+
     .list {
         padding: 5%;
     }
