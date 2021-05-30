@@ -14,3 +14,7 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+var ct = new Date();
+var current_time = String(ct).slice(0, 24)
+document.getElementById("current-time").innerHTML = current_time;
