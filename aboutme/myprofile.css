@@ -257,13 +257,13 @@ body {
   }
 
 /*Per posizionare i cerchi*/
-  .left::after, .right::after {
+  /* .left::after, .right::after {
     left: 15px;
   }
 
   .right {
     left: 0%;
-  }
+  } */
  
 
 .header {
