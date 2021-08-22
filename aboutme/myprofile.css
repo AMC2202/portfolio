@@ -3,7 +3,13 @@
 }
 
 body {
-  background-color: #474e5d;
+  /* background-color: #474e5d; */
+  /* background-image: radial-gradient(#373d48, #b7bdc8); */
+  background-image: url(coffee.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: Helvetica, sans-serif;
   /*background-image: url('myprofiletest.jpg');
   background-repeat: no-repeat;*/
@@ -19,11 +25,11 @@ body {
 .timeline {
   position: relative;
   /*max-width: 1200px;*/
-  margin: 2%;
+  margin-top: 6%;
 }
 
 .timeline::after {
-  content: '';
+  /* content: ''; */
   position: absolute;
   width: 6px;
   background-color: #d9d9d9;
@@ -34,15 +40,15 @@ body {
 }
 
 .container {
-  padding: 10px 40px;
+  padding: 6% 0%;
   position: relative;
   background-color: inherit;
-  width: 50%;
+  width: 55%;
 }
 
 /*cerchi della timeline*/
 .container::after {
-  content: '';
+  /* content: ''; */
   position: absolute;
   width: 25px;
   height: 25px;
@@ -59,12 +65,12 @@ body {
 }
 
 .right {
-  left: 50%;
+  left: 45%;
 }
 
 /*frecce per appendere i container alla timeline*/
 .left::before {
-  content: " ";
+  /* content: " "; */
   height: 0;
   position: absolute;
   top: 22px;
@@ -77,7 +83,7 @@ body {
 }
 
 .right::before {
-  content: " ";
+  /* content: " "; */
   height: 0;
   position: absolute;
   top: 22px;
@@ -95,10 +101,11 @@ body {
 }
 
 .content {
-  padding: 5%;
+  padding: 2%;
   background-color: #d9d9d9;
   position: relative;
-  border-radius: 6px;
+  opacity: .88;
+  /* border-radius: 6px; */
   font-family: Georgia, serif;
 }
 
@@ -437,12 +444,12 @@ body {
 
 .mySidenav a {
   position: absolute; 
-  left: -122px; /* per posizionare i segnalibri fuori dallo schermo */
+  left: -10%; /* per posizionare i segnalibri fuori dallo schermo */
   transition: 0.3s; /* per gestire la transizione al passaggio del mouse */
-  padding: 15px; 
-  width: 200px; 
+  padding: 1%; 
+  width: 15%; 
   text-decoration: none; 
-  font-size: 20px; 
+  font-size: 120%; 
   color: white; 
   border-radius: 0 5px 5px 0; 
 }
@@ -451,7 +458,7 @@ body {
   left: 0; /*Transizione al passaggio del mouse*/
 }
 
-@media only screen and (max-width: 736px) {
+@media only screen and (max-width: 1024px) { /*736px */
   .mySidenav a {
     font-size: 0%;
     padding: 20px; 
@@ -465,28 +472,53 @@ body {
 }
 
 /*Posizionare i segnalibri*/
+:root {
+  --init-top:3%;
+}
+
 #experience {
-  top: 20px;
+  top: var(--init-top);
   background-color:#474e5d;
   font-family: Georgia, serif;
 }
 
 #training {
-  top: 80px;
+  top: calc(var(--init-top) * 4);
   background-color:#474e5d;
   font-family: Georgia, serif;
 }
 
 #projects {
-  top: 140px;
+  top: calc(var(--init-top) * 7);
   background-color:#474e5d;
   font-family: Georgia, serif;
 }
 
 #contact {
-  top: 200px;
+  top: calc(var(--init-top) * 10);
   background-color:#474e5d;
   font-family: Georgia, serif;
+}
+
+/* Schermi ad altissima risoluzione */
+@media all and (min-width: 2561px) and (max-width: 3200px) {
+  .mySidenav a {
+    
+  }
+}
+
+/* Schermi ad alta risoluzione */
+@media all and (min-width: 2049px) and (max-width: 2560px) {
+  .mySidenav a {
+    
+  }
+}
+
+/* Schermi grandi o ad alta risoluzione */
+@media all and (min-width: 1690px) and (max-width: 2048px) { 
+  .mySidenav a {
+    
+  }
 }
 
 .icon {
@@ -868,12 +900,13 @@ body {
 }
 
 .textarea {
-  margin-bottom: 20px;
-  margin-top: 30px;
+  margin-bottom: 15%;
+  margin-top: 6%;
   padding: 2px;
   text-align: center;
   background: #d9d9d9;/*#333333; #777;*/
   color: black;
+  opacity: .88;
   font-family: Georgia,serif;
 }
 
@@ -890,11 +923,15 @@ body {
 }
 
 .bookmark1 {
+  background-color: rgba(0,0,0, 0.4);
+  border: 3px solid #f1f1f1;
+  /* width: fit-content; */
+  padding: 2%;
   color:white;
   font-family:Georgia,serif;
   font-style:italic;
   margin-right: 8%;
-  margin-left: 2%;
+  margin-left: -0.5%;
 }
 
 /* Schermi ad altissima risoluzione */
@@ -940,11 +977,16 @@ body {
 }
 
 .bookmark2 {
+  background-color: rgba(0,0,0, 0.4);
+  border: 3px solid #f1f1f1;
+  /* width: fit-content; */
+  padding: 2%;
   color:white;
   font-family:Georgia,serif;
   font-style:italic;
   text-align: right;
-  margin-right: 5%;
+  margin-left: 75%;
+  /* margin-right: 5%; */
 }
 
 /* Schermi ad altissima risoluzione */
@@ -965,6 +1007,7 @@ body {
 @media all and (min-width: 1690px) and (max-width: 2048px) {
   .bookmark2 {
     font-size: 36px;
+    margin-left: 70%;
   }
 }
 
@@ -972,6 +1015,7 @@ body {
 @media all and (min-width: 1280px) and (max-width: 1689px) {
   .bookmark2 {
     font-size: 28px;
+    margin-left: 68%;
   }
 }
 
@@ -979,6 +1023,7 @@ body {
 @media all and (min-width: 737px) and (max-width: 1279px) {
   .bookmark2 {
     font-size: 24px;
+    margin-left: 63%;
   }
 }
 
@@ -986,7 +1031,8 @@ body {
   .bookmark2 {
     text-align: right;
     font-size: 22px;
-    margin-right: 8%;
+    margin-left: 60%;
+    /* margin-right: 8%; */
   }
 }
 
