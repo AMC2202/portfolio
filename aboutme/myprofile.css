@@ -5,7 +5,7 @@
 body {
   /* background-color: #474e5d; */
   /* background-image: radial-gradient(#373d48, #b7bdc8); */
-  background-image: url(coffee.webp);
+  background-image: url(coffee.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -501,25 +501,25 @@ body {
 }
 
 /* Schermi ad altissima risoluzione */
-@media all and (min-width: 2561px) and (max-width: 3200px) {
+/* @media all and (min-width: 2561px) and (max-width: 3200px) {
   .mySidenav a {
     
   }
-}
+} */
 
 /* Schermi ad alta risoluzione */
-@media all and (min-width: 2049px) and (max-width: 2560px) {
+/* @media all and (min-width: 2049px) and (max-width: 2560px) {
   .mySidenav a {
     
   }
-}
+} */
 
 /* Schermi grandi o ad alta risoluzione */
-@media all and (min-width: 1690px) and (max-width: 2048px) { 
+/* @media all and (min-width: 1690px) and (max-width: 2048px) { 
   .mySidenav a {
     
   }
-}
+} */
 
 .icon {
   font-size:30px;
